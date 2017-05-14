@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AddressCard.h"
+#import "AddressBook.h"
 
 @interface AppDelegate ()
 
@@ -21,15 +22,36 @@
     NSString *aEmail = @"bob@gmail.com";
     NSString *bName = @"Anna Gold";
     NSString *bEmail = @"anna@gmail.com";
+    NSString *cName = @"Stenly Morgan";
+    NSString *cEmail = @"stenly@gmail.com";
+    NSString *dName = @"Eva Black";
+    NSString *dEmail = @"eva@gmali.com";
+    
     
     AddressCard *card1 = [[AddressCard alloc] init];
     AddressCard *card2 = [[AddressCard alloc] init];
+    AddressCard *card3 = [[AddressCard alloc] init];
+    AddressCard *card4 = [[AddressCard alloc] init];
+    
+    //создам новую адрессную книгу
+    AddressBook *myBook = [[AddressBook alloc] intitWhithName:@"Адресная книга Кинга"];
+    NSLog(@"Число записей в адрессной книге после создания %i",[myBook entries]);
     
     [card1 setName:aName andEmail:aEmail];
     [card2 setName:bName andEmail:bEmail];
+    [card3 setName:cName andEmail:cEmail];
+    [card4 setName:dName andEmail:dEmail];
     
-    [card1 print];
-    [card2 print];
+    //Добавляем карточки в адрессную книгу
+    [myBook addCard:card1];
+    [myBook addCard:card2];
+    [myBook addCard:card3];
+    [myBook addCard:card4];
+    
+    NSLog(@"Число записей в адресной книге после добавления карточек: %i", [myBook entries]);
+    
+    //Перечисляем все записи в книге
+    [myBook list];
     
     return YES;
 }

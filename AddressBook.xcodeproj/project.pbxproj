@@ -14,6 +14,7 @@
 		FB0172A31EC6CA86000E199B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0172A21EC6CA86000E199B /* Assets.xcassets */; };
 		FB0172A61EC6CA86000E199B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0172A41EC6CA86000E199B /* LaunchScreen.storyboard */; };
 		FB0172AF1EC6CAB6000E199B /* AddressCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0172AE1EC6CAB6000E199B /* AddressCard.m */; };
+		FB0172B51EC72220000E199B /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0172B41EC72220000E199B /* AddressBook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FB0172A71EC6CA86000E199B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0172AD1EC6CAB6000E199B /* AddressCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressCard.h; path = ../AddressCard.h; sourceTree = "<group>"; };
 		FB0172AE1EC6CAB6000E199B /* AddressCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressCard.m; path = ../AddressCard.m; sourceTree = "<group>"; };
+		FB0172B31EC72220000E199B /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = SOURCE_ROOT; };
+		FB0172B41EC72220000E199B /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			children = (
 				FB0172AD1EC6CAB6000E199B /* AddressCard.h */,
 				FB0172AE1EC6CAB6000E199B /* AddressCard.m */,
+				FB0172B31EC72220000E199B /* AddressBook.h */,
+				FB0172B41EC72220000E199B /* AddressBook.m */,
 				FB0172991EC6CA86000E199B /* AppDelegate.h */,
 				FB01729A1EC6CA86000E199B /* AppDelegate.m */,
 				FB01729C1EC6CA86000E199B /* ViewController.h */,
@@ -157,6 +162,7 @@
 			files = (
 				FB0172AF1EC6CAB6000E199B /* AddressCard.m in Sources */,
 				FB01729E1EC6CA86000E199B /* ViewController.m in Sources */,
+				FB0172B51EC72220000E199B /* AddressBook.m in Sources */,
 				FB01729B1EC6CA86000E199B /* AppDelegate.m in Sources */,
 				FB0172981EC6CA86000E199B /* main.m in Sources */,
 			);
@@ -315,6 +321,7 @@
 				FB0172AC1EC6CA86000E199B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
