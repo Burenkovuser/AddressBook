@@ -56,6 +56,10 @@
     //Перечисляем все записи в книге
     [myBook list];
     
+    //Сортируем книгу и снова выводим
+    [myBook sort];
+    [myBook list];
+    /*
     //Ищем человека по имени
     NSLog(@"Поиск:Anna Gold");
     myCard = [myBook looking:@"anna gold"];
@@ -77,7 +81,7 @@
      //Удалаяем запись из книги
     [myBook removeCard:card3];
     [myBook list];//проверяем что карточки нет
-
+*/
     return YES;
 }
 

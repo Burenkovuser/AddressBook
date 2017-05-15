@@ -21,5 +21,6 @@
 -(NSUInteger) entries;
 -(void) list;
 -(AddressCard*) looking:(NSString*) theName; //поиск адресной краточки по имени
+-(void) sort;
 
 @end

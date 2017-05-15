@@ -28,4 +28,9 @@
     self.name = theName;
     self.email = theEmail;
 }
+
+-(NSComparisonResult)compareNames:(id)element {
+    return [name compare:[element name]];
+}
+
 @end

@@ -54,4 +54,8 @@
     [book removeObjectIdenticalTo:theCard];
 }
 
+-(void)sort {
+    [book sortUsingSelector:@selector(compareNames:)];
+}
+
 @end
