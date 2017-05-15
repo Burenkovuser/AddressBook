@@ -48,7 +48,10 @@
             return nextCard;
        
         return nil;
-    
+}
+
+-(void)removeCard:(AddressCard *)theCard {
+    [book removeObjectIdenticalTo:theCard];
 }
 
 @end

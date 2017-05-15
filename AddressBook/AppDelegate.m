@@ -73,6 +73,10 @@
         [myCard print];
     else
         NSLog(@"Не обнаружена");
+    
+     //Удалаяем запись из книги
+    [myBook removeCard:card3];
+    [myBook list];//проверяем что карточки нет
 
     return YES;
 }

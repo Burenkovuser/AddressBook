@@ -16,6 +16,8 @@
 
 -(instancetype) intitWhithName:(NSString *) name; //instancetype возвращает объект того же класса, как тот что получил сообщение
 -(void) addCard:(AddressCard *) theCard;
+-(void) removeCard:(AddressCard*) theCard;
+
 -(NSUInteger) entries;
 -(void) list;
 -(AddressCard*) looking:(NSString*) theName; //поиск адресной краточки по имени
