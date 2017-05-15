@@ -37,6 +37,8 @@
     AddressBook *myBook = [[AddressBook alloc] intitWhithName:@"Адресная книга Кинга"];
     NSLog(@"Число записей в адрессной книге после создания %i",[myBook entries]);
     
+    AddressCard *myCard;
+    
     [card1 setName:aName andEmail:aEmail];
     [card2 setName:bName andEmail:bEmail];
     [card3 setName:cName andEmail:cEmail];
@@ -47,12 +49,31 @@
     [myBook addCard:card2];
     [myBook addCard:card3];
     [myBook addCard:card4];
+
     
     NSLog(@"Число записей в адресной книге после добавления карточек: %i", [myBook entries]);
     
     //Перечисляем все записи в книге
     [myBook list];
     
+    //Ищем человека по имени
+    NSLog(@"Поиск:Anna Gold");
+    myCard = [myBook looking:@"anna gold"];
+    
+    if(myCard != nil)
+        [myCard print];
+    else
+        NSLog(@"Не обнаружена");
+    
+    //Пробуем другой поиск
+    NSLog(@"Поиск: Petr Black");
+    myCard = [myBook looking:@"petr black"];
+    
+    if(myCard != nil)
+        [myCard print];
+    else
+        NSLog(@"Не обнаружена");
+
     return YES;
 }
 

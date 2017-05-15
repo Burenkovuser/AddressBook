@@ -18,5 +18,6 @@
 -(void) addCard:(AddressCard *) theCard;
 -(NSUInteger) entries;
 -(void) list;
+-(AddressCard*) looking:(NSString*) theName; //поиск адресной краточки по имени
 
 @end

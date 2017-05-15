@@ -42,4 +42,13 @@
     NSLog(@"==============================");
 }
 
+-(AddressCard *)looking:(NSString *)theName {
+    for (AddressCard *nextCard in book)
+        if ([nextCard.name caseInsensitiveCompare:theName] == NSOrderedSame)
+            return nextCard;
+       
+        return nil;
+    
+}
+
 @end
